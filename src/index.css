@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-orbitron: 'Orbitron', sans-serif;
+    --font-rajdhani: 'Rajdhani', sans-serif;
+    --font-space: 'Space Grotesk', sans-serif;
+}
+
+@layer base {
+    body {
+        font-family: 'Rajdhani', sans-serif;
+        background-color: #0f0f1e;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 700;
+    }
+}
+
+@layer utilities {
+    .font-orbitron {
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .font-rajdhani {
+        font-family: 'Rajdhani', sans-serif;
+    }
+
+    .font-space {
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .gaming-title {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    .neon-glow {
+        text-shadow:
+            0 0 10px rgba(168, 85, 247, 0.8),
+            0 0 20px rgba(168, 85, 247, 0.6),
+            0 0 30px rgba(168, 85, 247, 0.4),
+            0 0 40px rgba(168, 85, 247, 0.2);
+    }
+
+    .neon-pink {
+        text-shadow:
+            0 0 10px rgba(236, 72, 153, 0.8),
+            0 0 20px rgba(236, 72, 153, 0.6),
+            0 0 30px rgba(236, 72, 153, 0.4);
+    }
+
+    .neon-blue {
+        text-shadow:
+            0 0 10px rgba(59, 130, 246, 0.8),
+            0 0 20px rgba(59, 130, 246, 0.6),
+            0 0 30px rgba(59, 130, 246, 0.4);
+    }
+}
+
+@plugin "daisyui";
