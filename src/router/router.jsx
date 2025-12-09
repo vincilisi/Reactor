@@ -10,7 +10,10 @@ import RegisterPage from "../views/auth/RegisterPage";
 import LoginPage from "../views/auth/LoginPage";
 import ProfilePage from "../views/auth/ProfilePage";
 import ProfileSettingsPage from "../views/auth/ProfileSetingsPage";
-import DetailPage from "../views/DetailPage"
+import DetailPage from "../views/DetailPage";
+import HelpPage from "../views/HelpPage";
+import ContactPage from "../views/ContactPage";
+import AboutPage from "../views/AboutPage";
 
 const router = createBrowserRouter([
     {
@@ -45,6 +48,18 @@ const router = createBrowserRouter([
                 path: routes.detail,
                 Component: DetailPage,
                 loader: getGameDetails
+            },
+            {
+                path: "/help",
+                Component: HelpPage
+            },
+            {
+                path: "/contact",
+                Component: ContactPage
+            },
+            {
+                path: "/about",
+                Component: AboutPage
             }
         ],
     },

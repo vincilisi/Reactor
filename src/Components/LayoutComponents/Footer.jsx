@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import LanguageSelector from '../LanguageSelector';
 
 export default function Layout() {
@@ -19,10 +20,10 @@ export default function Layout() {
                     {/* Links */}
                     <div className="flex flex-wrap gap-6">
                         <div className="flex gap-4">
-                            <a className="link link-hover text-sm">{t('browseGames')}</a>
-                            <a className="link link-hover text-sm">{t('helpCenter')}</a>
-                            <a className="link link-hover text-sm">{t('contact')}</a>
-                            <a className="link link-hover text-sm">{t('aboutUs')}</a>
+                            <Link to="/" className="link link-hover text-sm">{t('browseGames')}</Link>
+                            <Link to="/help" className="link link-hover text-sm">{t('helpCenter')}</Link>
+                            <Link to="/contact" className="link link-hover text-sm">{t('contact')}</Link>
+                            <Link to="/about" className="link link-hover text-sm">{t('aboutUs')}</Link>
                         </div>
                     </div>
 
